@@ -1,8 +1,8 @@
 ---
 
-  - name: Copy Unzip rpm
+  - name: Copy wget rpm
     copy:
-      src: "../bin/{{ wget_rpm }}"
+      src: "../rpm/{{ wget_rpm }}"
       dest: /tmp/
 
   - name: Install Unzip pkg

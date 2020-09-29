@@ -2,7 +2,7 @@
 
   - name: Copy rpms
     copy:
-      src: "../bin/{{ telnet_rpm }}"
+      src: "../rpm/{{ telnet_rpm }}"
       dest: /tmp/
 
   - name: Install telnet

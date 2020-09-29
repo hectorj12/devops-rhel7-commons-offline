@@ -2,7 +2,7 @@
 
   - name: Copy Unzip rpm
     copy:
-      src: "../bin/{{ unzip_rpm }}"
+      src: "../rpm/{{ unzip_rpm }}"
       dest: /tmp/
 
   - name: Install Unzip pkg

@@ -8,7 +8,7 @@
     roles:
       - telnet
       - git
-      - ntp
+      #- ntp
       - unzip
       - wget
 ... 
