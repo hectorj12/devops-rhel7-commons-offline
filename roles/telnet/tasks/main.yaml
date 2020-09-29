@@ -1,0 +1,15 @@
+---
+
+  - name: Copy rpms
+    copy:
+      src: "../bin/{{ telnet_rpm }}"
+      dest: /tmp/
+
+  - name: Install telnet
+    shell: rpm -ivh --force "{{ telnet_rpm }}"
+    args:
+      chdir: /tmp/
+    become: yes
+
+
+...

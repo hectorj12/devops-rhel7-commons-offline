@@ -1,0 +1,15 @@
+---
+
+  - name: Copy Unzip rpm
+    copy:
+      src: "../bin/{{ unzip_rpm }}"
+      dest: /tmp/
+
+  - name: Install Unzip pkg
+    shell: rpm -ivh --force "{{ unzip_rpm }}"
+    args:
+      chdir: /tmp/
+    become: yes
+
+
+...
